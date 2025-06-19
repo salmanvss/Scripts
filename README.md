@@ -1,5 +1,8 @@
 
+Reference:
 https://x.com/salmanvsf/status/1935590497088852093
+
+Infection Flow :
 js -> powershell ->download jpg -> extract bmp -> load dll in memory
 
 2f32e9e485b127c1bdcaf7984cc7485a - PO_N0_JKPO25040107.js

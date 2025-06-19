@@ -3,7 +3,7 @@ Reference:
 https://x.com/salmanvsf/status/1935590497088852093
 
 Infection Flow :
-js -> powershell ->download jpg -> extract bmp -> load dll in memory
+js -> powershell ->download jpg -> extract bmp -> load dll in memory (Katz Stealer)
 
 2f32e9e485b127c1bdcaf7984cc7485a - PO_N0_JKPO25040107.js
 https://www.virustotal.com/gui/file/fda1d464861ac16072605f2a390e710b18353cae798fd0ff41b67a9556fe24e2

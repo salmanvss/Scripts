@@ -23,7 +23,7 @@ It is useful for analyzing suspicious images that hide malware using pixel RGB d
 ## 📂 Files
 
 - `extract_embedded_dll.py` — Python 3 script for Linux/REMnux. https://github.com/salmanvss/Scripts/blob/main/extract_embedded_dll.py
-- `sample.jpg` — (Optional). https://www.virustotal.com/gui/file/6fd22b60afbd013a480c096ecc4da6cc89f7e805d44fc68ec18a4be8464259b0
+- `suspicious_image.jpg` — Live sample. https://www.virustotal.com/gui/file/6fd22b60afbd013a480c096ecc4da6cc89f7e805d44fc68ec18a4be8464259b0
 
 ## ⚙️ Requirements
 

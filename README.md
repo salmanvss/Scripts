@@ -20,21 +20,21 @@ https://www.virustotal.com/gui/file/fda1d464861ac16072605f2a390e710b18353cae798f
 This script extracts a hidden binary payload that is embedded inside a seemingly normal JPG image using a simple steganographic trick: it hides a valid BMP file starting somewhere inside the JPG’s raw bytes.
 
 ⚙️ Step 1 — Scan for the BMP header
-A standard BMP file starts with a specific byte signature:
+a. A standard BMP file starts with a specific byte signature:
 42 4D 32 55 36 00 00 00 00 00 36 00 00 00 28 00
 : 42 4D is 'BM' in ASCII — the standard BMP magic number.
-The script reads the entire JPG file byte by byte and searches for this exact BMP header pattern.
+b. The script reads the entire JPG file byte by byte and searches for this exact BMP header pattern.
 
 ⚙️ Step 2 — Extract the BMP data
-Once it finds the header, it assumes everything from that offset onward is a valid BMP file.
-It slices the JPG’s raw bytes from the found header offset to the end.
-This gives the hidden BMP image, which can be processed like a normal BMP.
+a. Once it finds the header, it assumes everything from that offset onward is a valid BMP file.
+b. It slices the JPG’s raw bytes from the found header offset to the end.
+c. This gives the hidden BMP image, which can be processed like a normal BMP.
 
 ⚙️ Step 3 — Decode the hidden payload
-The extracted BMP is opened using an image library.
-It loops through every pixel’s RGB values and collects them in order.
-The first 4 RGB bytes give the length of the hidden payload.
-The next bytes are the actual binary data — usually a compiled .NET DLL.
+a. The extracted BMP is opened using an image library.
+b. It loops through every pixel’s RGB values and collects them in order.
+c. The first 4 RGB bytes give the length of the hidden payload.
+d. The next bytes are the actual binary data — usually a compiled .NET DLL.
 
 
 

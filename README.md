@@ -11,8 +11,6 @@ It is useful for analyzing suspicious images that hide malware using pixel RGB d
 ## ⚙️ Requirements
 
 - Python 3
-- Pillow library (`pip install pillow`)
-
 Tested on [REMnux](https://remnux.org/), but works on any Linux/macOS/Python environment.
 
 ## 🚀 Usage
